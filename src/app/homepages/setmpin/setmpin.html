@@ -1,0 +1,12 @@
+<div class="auth-body">
+    <div class="login-card">
+        <h2>Set Login PIN</h2>
+        <form [formGroup]="SetMpin_Form">
+            <input type="text" formControlName="Mpin" placeholder="Enter New PIN" maxlength="6"
+                (input)="allowOnlyNumbers($event)" />
+            <input type="text" formControlName="ReMpin" placeholder="Enter RE-PIN" maxlength="6"
+                (input)="allowOnlyNumbers($event)" />
+            <button (click)="setmpin()">Continue</button>
+        </form>
+    </div>
+</div>

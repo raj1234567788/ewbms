@@ -1,0 +1,32 @@
+<div style="padding: 16px;">
+    <header class="header">
+        <h2>🚦 Traffic Mitra</h2>
+        <div class="user"><a (click)="logout()">Log Out</a></div>
+    </header>
+
+    <section class="stats">
+        <div class="card blue">
+            <h3>Total Complaints</h3>
+            <p>{{totalComplaint}}</p>
+        </div>
+        <div class="card orange">
+            <h3>Pending</h3>
+            <p>{{pendingComplaint}}</p>
+        </div>
+        <div class="card green">
+            <h3>Issued</h3>
+            <p>{{issuedComplaint}}</p>
+        </div>
+        <div class="card orange">
+            <h3>Rejected</h3>
+            <p>{{rejectedComplaint}}</p>
+        </div>
+    </section>
+
+    <section class="actions">
+        <button [routerLink]="['/dashboard']">📄 My Complaints</button>
+        <button [routerLink]="['/ApprovedComplaint']">➕ Register Complaint</button>
+        <button [routerLink]="['/RegisterComplaint']">➕ Approved Complaint</button>
+        <button [routerLink]="['/AllComplaint']">📄 All Complaints</button>
+    </section>
+</div>

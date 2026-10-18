@@ -1,0 +1,28 @@
+<section class="table-box">
+    <h3>Recent Complaints</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Mobile No</th>
+                <th>Vehical No</th>
+                <th>Complaint Remarks</th>
+                <th>Created Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of complaintList; track item.complaint_id; let i = $index) {
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{item.mobile_no}}</td>
+                <td>{{item.vehical_no}}</td>
+                <td>{{item.complaint_remarks}}</td>
+                <td>{{item.CreatetDate}}</td>
+                <td>{{item.pending}}</td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+</section>

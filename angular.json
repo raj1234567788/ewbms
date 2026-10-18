@@ -25,7 +25,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/add-complaint.css",
+              "src/assets/dashboard.css",
+              "src/assets/home.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/quill/dist/quill.snow.css",
+              "node_modules/quill/dist/quill.bubble.css"
             ]
           },
           "configurations": {

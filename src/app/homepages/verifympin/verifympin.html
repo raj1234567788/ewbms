@@ -1,0 +1,12 @@
+<div class="auth-body">
+    <div class="login-card">
+        <h2>Enter Your Login PIN</h2>
+        <form [formGroup]="VerifyMpin_Form">
+            <input type="text" formControlName="Mpin" maxlength="6" (input)="allowOnlyNumbers($event)"
+                placeholder="Enter Verify PIN" />
+
+            <button (click)="verifyMpin()">Verify PIN</button>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<section class="table-box">
+    <h3>Recent Complaints</h3>
+    <!-- <app-reusable-table [columns]="columns" [data]="tableData" [actions]="actions" [pageSize]="pageSize"
+        [currentPage]="currentPage" (pageChanged)="onPageChange($event)" (actionClicked)="onTableAction($event)">
+    </app-reusable-table> -->
+
+    <app-reusable-table [columns]="columns" [paginator]="paginator" [data]="tableData" [actions]="actions" [rows]="rows"
+        [first]="first" (pageChanged)="onPageChange($event)" (actionClicked)="onTableAction($event)">
+    </app-reusable-table>
+
+    <quill-editor [(ngModel)]="description" placeholder="Enter complaint details..." style="height: 200px">
+    </quill-editor>
+
+    <button (click)="getdata()">GetData</button>
+</section>

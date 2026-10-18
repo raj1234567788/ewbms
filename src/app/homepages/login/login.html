@@ -1,0 +1,13 @@
+<div class="auth-body">
+    <div class="login-card">
+        <h2>Welcome to Traffic Mitra</h2>
+        <p>देखो, सोचो, बताओ — शहर को सुरक्षित बनाओ</p>
+        <form [formGroup]="VerifyMobile_Form">
+            <input type="text" formControlName="mobile" maxlength="10" (input)="allowOnlyNumbers($event)"
+                placeholder="Your Mobile Number 10 Digit Mobile Number" />
+
+
+            <button (click)="VerifyMobile()">Continue</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="auth-body">
+    <div class="login-card">
+        <h2>Welcome to Traffic Mitra</h2>
+        <p>देखो, सोचो, बताओ — शहर को सुरक्षित बनाओ</p>
+        <form [formGroup]="VerifyOtp_Form">
+            <input type="text" formControlName="mobile" maxlength="10" (input)="allowOnlyNumbers($event)"
+                placeholder="Your Mobile Number 10 Digit Mobile Number" />
+
+            <div id="otpDiv">
+                <input type="text" formControlName="OTP" maxlength="6" (input)="allowOnlyNumbers($event)"
+                    placeholder="Enter 6 Digit OTP" />
+            </div>
+
+            <button (click)="verifyotp()">Continue</button>
+        </form>
+    </div>
+</div>
