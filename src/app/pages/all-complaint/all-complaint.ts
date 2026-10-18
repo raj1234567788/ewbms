@@ -63,7 +63,7 @@ export class AllComplaint {
     { id: 2, name: 'Amit', status: 'Approved' },
     { id: 3, name: 'Neha', status: 'Pending' },
     { id: 4, name: 'Ravi', status: 'Approved' },
-    { id: 5, name: 'Pooja', status: 'Pending' }
+    { id: 5, name: 'Pooja', status: 'Pending' },
     { id: 6, name: 'Rohi', status: 'Pending' }
   ];
 
